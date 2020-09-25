@@ -5,11 +5,13 @@ API Endpoints:
 1. Login
 
 `/api/login`: POST method.
+
 Required post parameters `email` and `password`
 
 2. Register
 
 `/api/register`: POST method.
+
 Required post parameters `name`, `email` and `password`.
 
 3. User (Authenticated)
@@ -17,21 +19,28 @@ Required post parameters `name`, `email` and `password`.
 
 4. To view all tasks (Authenticated)
    `api/tasks?token=VALID_TOKEN`: GET method
-   **Description**: To view all tasks created by the logged in user
+
+    **Description**: To view all tasks created by the logged in user
 
 5. To create task (Authenticated)
-   `api/tasks?token=VALID_TOKEN`: POST method
-   Required post parameters `title` and `details`.
+
+    `api/tasks?token=VALID_TOKEN`: POST method
+
+    Required post parameters `title` and `details`.
 
 6. To delete task (Authenticated)
-   `api/tasks?token=VALID_TOKEN`: DELETE method
+
+    `api/tasks?token=VALID_TOKEN`: DELETE method
 
 7. To edit task (Authenticated)
-   `api/tasks?token=VALID_TOKEN`: PUT/PATCH method
-   Required post parameters `title` and `details`.
+
+    `api/tasks?token=VALID_TOKEN`: PUT/PATCH method
+
+    Required post parameters `title` and `details`.
 
 8. To logout (Authenticated)
-   `/api/logout?token=VALID_TOKEN`: GET method
+
+    `/api/logout?token=VALID_TOKEN`: GET method
 
 ## Step 1: Install Laravel using Composer
 
